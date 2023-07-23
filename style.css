@@ -1,0 +1,192 @@
+                                h1 {
+                                    text-align: center;
+                                    font-family: 'Roboto', sans-serif;
+                                }
+                                
+                                p {
+                                    text-align: center;
+                                    font-family: Georgia, 'Times New Roman', Times, serif;
+                                    color: grey;
+                                }
+                                
+                                .Robot {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                
+                                .head,
+                                .left_arm,
+                                .torso,
+                                .right_arm,
+                                .left_leg,
+                                .right_leg {
+                                    background-color: #5f93e8;
+                                }
+                                
+                                .head {
+                                    width: 200px;
+                                    height: 150px;
+                                    margin: 0 auto;
+                                    border-radius: 200px 200px 0 0;
+                                    margin-bottom: 10px;
+                                }
+                                
+                                .head:hover {
+                                    width: 300px;
+                                    transition: 1s ease-in-out;
+                                }
+                                
+                                .head:hover .right_eye,
+                                .head:hover .left_eye {
+                                    box-shadow: inset 5px 0 5px#9c0058
+                                }
+                                
+                                .head:hover .mouth {
+                                    display: block;
+                                }
+                                
+                                .eyes {
+                                    display: flex;
+                                }
+                                
+                                .left_eye,
+                                .right_eye {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 15px;
+                                    background-color: white;
+                                }
+                                
+                                .left_eye {
+                                    position: relative;
+                                    top: 100px;
+                                    left: 40px;
+                                }
+                                
+                                .right_eye {
+                                    position: relative;
+                                    top: 100px;
+                                    left: 120px;
+                                }
+                                
+                                .mouth {
+                                    background-color: rgb(148, 139, 139);
+                                    width: 20px;
+                                    height: 1px;
+                                    position: relative;
+                                    top: 130px;
+                                    left: 58px;
+                                    display: none;
+                                }
+                                
+                                .upper_body {
+                                    width: 300px;
+                                    height: 150px;
+                                    display: flex;
+                                }
+                                
+                                .left_arm,
+                                .right_arm {
+                                    width: 40px;
+                                    height: 125px;
+                                    border-radius: 150px;
+                                    transition: all 1s;
+                                }
+                                
+                                .left_arm {
+                                    margin-right: 10px;
+                                }
+                                
+                                .left_arm:hover {
+                                    -ms-transform: translate(0, -50%) scale(1.2);
+                                    -moz-transform: translate(0, -50%) scale(1.2);
+                                    -webkit-transform: translate(0, -50%) scale(1.2);
+                                    -o-transform: translate(0, -50%) scale(1.2);
+                                    transform: translate(0, -50%) scale(1.2);
+                                }
+                                
+                                .right_arm {
+                                    margin-left: 10px;
+                                }
+                                
+                                .right_arm:hover {
+                                    -webkit-transform: translate(0, -50%) scale(1.2);
+                                    -moz-transform: translate(0, -50%) scale(1.2);
+                                    -o-transform: translate(0, -50%) scale(1.2);
+                                    -ms-transform: translate(0, -50%) scale(1.2);
+                                    transform: translate(0, -50%) scale(1.2);
+                                }
+                                
+                                .torso {
+                                    width: 200px;
+                                    height: 200px;
+                                    border-radius: 0 0 50px 50px;
+                                    display: flex;
+                                    justify-content: center;
+                                }
+                                
+                                .energy_ball {
+                                    border-radius: 50%;
+                                    background-color: white;
+                                    height: 40px;
+                                    width: 40px;
+                                    position: relative;
+                                    top: 50px;
+                                    box-shadow: 0 0 20px#fff, 10px0 40pxf0f, -10px 0 40px #f0f
+                                }
+                                
+                                .torso:hover .energy_ball {
+                                    -webkit-animation: glow 1s ease-in-out infinite alternate;
+                                    -moz-animation: glow 1s ease-in-out infinite alternate;
+                                    animation: glow 1s ease-in-out infinite alternate;
+                                }
+                                
+                                .lower_body {
+                                    display: flex;
+                                    width: 200px;
+                                    height: 200px;
+                                    margin: 0 auto;
+                                }
+                                
+                                .left_leg,
+                                .right_leg {
+                                    width: 40px;
+                                    height: 120px;
+                                    border-radius: 0 0 100px 100px;
+                                }
+                                
+                                .left_leg {
+                                    margin-left: 45px;
+                                }
+                                
+                                .left_leg:hover {
+                                    -webkit-transform: rotate(20deg);
+                                    -moz-transform: rotate(20deg);
+                                    -o-transform: rotate(20deg);
+                                    -ms-transform: rotate(20deg);
+                                    transform: rotate(20deg);
+                                }
+                                
+                                .right_leg {
+                                    margin-left: 30px;
+                                }
+                                
+                                .right_leg:hover {
+                                    -webkit-transform: rotate(-20deg);
+                                    -moz-transform: rotate(-20deg);
+                                    -o-transform: rotate(-20deg);
+                                    -ms-transform: rotate(-20deg);
+                                    transform: rotate(-20deg);
+                                }
+                                
+                                @keyframes glow {
+                                    0% {
+                                        box-shadow: 0 0 20px #fff, 10px 0 40px#f0f, -10px 0 40px#f0f,
+                                    }
+                                    30% {
+                                        box-shadow: 0 0 40px #fff, 10px 0 60px #f0f, -10px 0 60px #f0f,
+                                    }
+                                    100% {
+                                        box-shadow: 0 0 60px #fff, 10px 0 80px #f0f, -10px 0 80px #f0f, inset -10px 0 40px #f0f
+                                    }
+                                }
